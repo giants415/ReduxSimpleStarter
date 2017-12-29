@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import MY_KEY from 'config.js';
+import {KEY} from '../config.js';
 
-const API_KEY = config.MY_KEY;
+const API_KEY = KEY.MY_KEY;
 
 // Create a new component. This component should produce some HTML
 const App = () => {
