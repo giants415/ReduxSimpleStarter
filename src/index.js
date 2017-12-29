@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import SearchBar from 'search_bar';
+
 import {KEY} from '../config.js';
 
 const API_KEY = KEY.MY_KEY;
