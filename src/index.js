@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import SearchBar from './components/search_bar';
 
-import KEY from '../config';
+import KEY from './config';
 
 const API_KEY = KEY;
 
