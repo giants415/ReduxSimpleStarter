@@ -9,7 +9,12 @@ class SearchBar extends Component {
 
   render() {
           // ( ) around event are dropped in this case bc only 1 argument is passed in
-    return <input onChange={event => console.log(event.target.value)} />;
+    return (
+      <div>
+        <input onChange={event => this.setState({ term: event.target.value })} />
+        Value of the input: {this.state.term}
+      </div>
+    );
   }
 
   //event handler. Commented out and refactored to
