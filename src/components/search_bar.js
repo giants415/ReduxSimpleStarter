@@ -11,7 +11,11 @@ class SearchBar extends Component {
           // ( ) around event are dropped in this case bc only 1 argument is passed in
     return (
       <div>
-        <input onChange={event => this.setState({ term: event.target.value })} />
+        //controlled form input - onchange causes component to rerender
+        //and update value seen in search bar
+        <input
+          value={this.state.term}
+          onChange={event => this.setState({ term: event.target.value })} />
       </div>
     );
   }
