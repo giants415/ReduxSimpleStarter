@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoDetail = (props) => {
+const VideoDetail = ({video}) => {
   return (
     <div className="video-detail col-md-9">
       <div className="embed-responsive embed-responsive-16by9">
