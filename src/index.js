@@ -8,12 +8,20 @@ import KEY from './config';
 
 const API_KEY = KEY;
 
-YTSearch({key: API_KEY, term: 'surfboards'}, function(data) {
-  console.log(data);
-})
-
 // Create a new component. This component should produce some HTML
 class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = { videos: [] };
+
+    YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
+      this.setState({ videos });
+      // in ES6, if key and property are the same variable name then it can be condensed
+      // from something like ({ videos: videos}) to what is seen above
+    });
+  }
+
   render() {
     return (
       <div>
