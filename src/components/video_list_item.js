@@ -2,7 +2,7 @@ import React from 'react';
 
 const VideoListItem = ({video, onVideoSelect}) => {
   // const video = props.video; this line is replaced, in es6,
-  //by the curly brace var the is passed in
+  //by the curly brace var the is passed in. same thing for onVideoSelect prop that is coming in
   const imageUrl = video.snippet.thumbnails.default.url;
 
   return (
