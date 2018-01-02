@@ -8,6 +8,10 @@ import KEY from './config';
 
 const API_KEY = KEY;
 
+YTSearch({key: API_KEY, term: 'surfboards'}, function(data) {
+  console.log(data);
+})
+
 // Create a new component. This component should produce some HTML
 const App = () => {
   return (
