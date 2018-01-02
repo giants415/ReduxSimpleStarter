@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoListItem = ({video}) => {
+const VideoListItem = ({video, onVideoSelect}) => {
   // const video = props.video; this line is replaced, in es6,
   //by the curly brace var the is passed in
   const imageUrl = video.snippet.thumbnails.default.url;
