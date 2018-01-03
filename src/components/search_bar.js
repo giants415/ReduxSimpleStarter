@@ -12,7 +12,7 @@ class SearchBar extends Component {
   render() {
           // ( ) around event are dropped in this case bc only 1 argument is passed in
     return (
-      <div>
+      <div className="search-bar">
         <input
           value={this.state.term}
           onChange={event => this.setState({ term: event.target.value })} />
