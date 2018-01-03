@@ -37,7 +37,7 @@ class App extends Component {
   }
 
   render() {
-    // debounce takes inner fn and returns a new fn 
+    // debounce takes inner fn and returns a new fn
     // that can only be called every # seconds, ie 300 in this case
     const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
 
@@ -55,3 +55,6 @@ class App extends Component {
 
 // Take this component's generated HTML and put it on the page (i.e. in the DOM)
 ReactDOM.render(<App />, document.querySelector('.container'));
+
+
+// COMPLETED FIRST REACT APP
